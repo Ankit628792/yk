@@ -1,1 +1,1 @@
-<img src='/ss.png alt="" />
+![alt text](./ss.png)
