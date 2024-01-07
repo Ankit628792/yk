@@ -5,7 +5,6 @@ import Profile from '@/assets/profile.png'
 import Dots from '@/assets/dots.svg'
 import FinderPrint from '@/assets/finger-print.png'
 import Wings from '@/assets/wings.png'
-import Mine from '@/assets/mine.png'
 // @ts-ignore 
 import Slide from 'react-reveal/Slide'
 // @ts-ignore 
@@ -96,10 +95,10 @@ export default function Home() {
         <div className='min-h-screen w-full max-w-7xl mx-auto place-items-center grid grid-cols-4 gap-20 md:gap-5 pt-20 md:py-10'>
           <div className='col-span-4 md:col-span-2'>
             <Slide>
-              <h1 style={redHat.style} className='text-center md:text-left text-8xl lg:text-9xl 2xl:text-[9rem]'><JumbleWord word={'Hello!'} /> <br /><JumbleWord word={"I'm Yash"} /></h1>
+              <h1 style={redHat.style} className='text-center md:text-left text-6xl sm:text-8xl lg:text-9xl 2xl:text-[9rem]'><JumbleWord word={'Hello!'} /> <br /><JumbleWord word={"I'm Yash"} /></h1>
             </Slide>
             <Slide>
-              <p style={poppins.style} className='text-center md:text-left text-4xl lg:text-5xl mt-3 md:mt-6'>
+              <p style={poppins.style} className='text-center md:text-left text-3xl sm:text-4xl lg:text-5xl mt-3 md:mt-6'>
                 <JumbleWord word={'A Logo designer'} /> <br />
                 <JumbleWord word={'based in India'} />
               </p>
@@ -134,8 +133,8 @@ export default function Home() {
                   </Slide>
                   <Slide>
                     <div className='w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 relative mx-auto mt-6'>
-                      <img src={item.image || Mine.src} className='w-full h-full rounded-3xl object-contain absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 filter blur-3xl' alt="" />
-                      <img src={item.image || Mine.src} className='w-full h-full rounded-2xl sm:rounded-3xl lg:rounded-[40px] object-contain z-10 relative' alt="" />
+                      <img src={item.image} className='w-full h-full rounded-3xl object-contain absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 filter blur-3xl' alt="" />
+                      <img src={item.image} className='w-full h-full rounded-2xl sm:rounded-3xl lg:rounded-[40px] object-contain z-10 relative' alt="" />
                     </div>
                   </Slide>
                 </div>)
@@ -150,11 +149,11 @@ export default function Home() {
           <div className='grid grid-cols-12 items-center flex-grow'>
             <Pulse>
               <div className='col-span-12 md:col-span-5 grid place-items-center'>
-                <img src={FinderPrint.src} className='w-40' alt="" />
+                <img src={FinderPrint.src} className='w-40 h-80 object-contain' alt="" />
               </div>
             </Pulse>
             <div className='col-span-12 md:col-span-7'>
-              <Slide right cascade>
+              <Slide cascade>
                 <div className='max-w-2xl'>
                   <p style={redHat2.style} className='text-3xl lg:text-5xl'><JumbleWord word={about.title} /></p>
                   {
@@ -175,7 +174,7 @@ export default function Home() {
               </div>
             </Pulse>
             <div className='col-span-12 md:col-span-7'>
-              <Slide right cascade>
+              <Slide cascade>
                 <div className='max-w-2xl'>
                   <p style={redHat2.style} className='text-3xl lg:text-5xl'><JumbleWord word={contact.title} /></p>
                   <p style={poppins.style} className='text-2xl lg:text-4xl my-6 leading-normal'><JumbleWord word={contact.description} /></p>

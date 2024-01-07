@@ -21,14 +21,15 @@ export const data = {
         {
             title: 'Mine Dating',
             description: 'hey, how are you buddy ? Hope u r well',
-            image: '',
-            link: ''
+            image: 'https://play-lh.googleusercontent.com/QI5MQBa5rpIKgfafArmUUxsDznjUtmEB6obrsaNLdxO3B5SATCUZbTydJ22dFfnZziwU=w240-h480-rw',
+            link: 'https://play.google.com/store/apps/details?id=com.delanki.mine'
         }
     ]
 }
 
 
 export const openLink = (link) => {
+    if (!link) return;
     if (!link?.substring(0, 4)?.includes('http')) {
         link = 'https://' + link
     }
