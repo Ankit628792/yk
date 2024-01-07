@@ -104,12 +104,10 @@ export default function Home() {
               </p>
             </Slide>
           </div>
-          <Pulse>
-            <div className='col-span-4 md:col-span-2 relative'>
-              <img src={Dots.src} className='w-[370px] h-96 sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] xl:h-[600px] xl:w-[600px] object-cover' alt="" />
-              <img src={Profile.src} className='w-[300px] h-80 sm:h-96 sm:w-96 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-contain' alt="" />
-            </div>
-          </Pulse>
+          <div className='col-span-4 md:col-span-2 relative'>
+            <img src={Dots.src} className='w-[370px] h-96 sm:h-[400px] sm:w-[400px] lg:h-[500px] lg:w-[500px] xl:h-[600px] xl:w-[600px] object-cover' alt="" />
+            <img src={Profile.src} className='w-[300px] h-80 sm:h-96 sm:w-96 lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 object-contain' alt="" />
+          </div>
         </div>
 
         <div ref={workRef} className='w-full min-h-[80vh] md:min-h-screen flex flex-col'>
@@ -149,7 +147,7 @@ export default function Home() {
           <div className='grid grid-cols-12 items-center flex-grow'>
             <Pulse>
               <div className='col-span-12 md:col-span-5 grid place-items-center'>
-                <img src={FinderPrint.src} className='w-40 h-80 object-contain' alt="" />
+                <img src={FinderPrint.src} className='w-40 md:w-60 xl:w-80 h-80 md:h-96 object-contain' alt="" />
               </div>
             </Pulse>
             <div className='col-span-12 md:col-span-7'>
@@ -157,7 +155,7 @@ export default function Home() {
                 <div className='max-w-2xl'>
                   <p style={redHat2.style} className='text-3xl lg:text-5xl'><JumbleWord word={about.title} /></p>
                   {
-                    about.description.map((desc, i) => <p key={i} style={poppins.style} className='text-2xl lg:text-4xl my-6 leading-normal'><JumbleWord word={desc} /></p>)
+                    about.description.map((desc, i) => <p key={i} style={poppins.style} className={'text-2xl lg:text-4xl my-6 xl:my-10 leading-normal ' + (i === 0 ? 'mb-10 xl:mb-14' : '')}><JumbleWord word={desc} /></p>)
                   }
                 </div>
               </Slide>
@@ -177,14 +175,14 @@ export default function Home() {
               <Slide cascade>
                 <div className='max-w-2xl'>
                   <p style={redHat2.style} className='text-3xl lg:text-5xl'><JumbleWord word={contact.title} /></p>
-                  <p style={poppins.style} className='text-2xl lg:text-4xl my-6 leading-normal'><JumbleWord word={contact.description} /></p>
+                  <p style={poppins.style} className='text-2xl lg:text-4xl my-6 xl:my-10 leading-normal'><JumbleWord word={contact.description} /></p>
                   <div className='flex items-center gap-1 my-6'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                     <p style={poppins.style} className='text-xl lg:text-3xl text-blue-600'><a href={`mailto:${contact.email}`}><JumbleWord word={contact.email} /></a></p>
                   </div>
-                  <p style={poppins.style} className='text-xl lg:text-3xl my-10 cursor-pointer' onClick={() => openLink(contact.instagramURL)}><JumbleWord word={`Instagram`} /></p>
+                  <p style={poppins.style} className='text-xl lg:text-3xl my-6 xl:my-10 cursor-pointer' onClick={() => openLink(contact.instagramURL)}><JumbleWord word={`Instagram`} /></p>
                 </div>
               </Slide>
             </div>
