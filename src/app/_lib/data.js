@@ -25,9 +25,9 @@ export const data = {
             link: 'https://play.google.com/store/apps/details?id=com.delanki.mine'
         },
         {
-            title: 'Love Alarm 2.o',
+            title: 'Love 2.0',
             description: 'A new way to tell someone, you like them.',
-            image: 'https://www.lovealarm.in/_next/image?url=%2Fandroid-chrome-512x512.png&w=96&q=75',
+            image: 'https://play-lh.googleusercontent.com/pjB5Omm5cZG_qy69giFcnnM4neWZp1cmQk5lp5l89L3X9mIj5bscNXb5rGFOWe1Pv9VO=w240-h480',
             link: 'https://www.lovealarm.in/'
         }
     ]
