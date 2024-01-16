@@ -20,13 +20,13 @@ export const data = {
     work: [
         {
             title: 'Mine Dating',
-            description: 'hey, how are you buddy ? Hope u r well',
+            description: 'A dating app, where your story begines.',
             image: 'https://play-lh.googleusercontent.com/QI5MQBa5rpIKgfafArmUUxsDznjUtmEB6obrsaNLdxO3B5SATCUZbTydJ22dFfnZziwU=w240-h480-rw',
             link: 'https://play.google.com/store/apps/details?id=com.delanki.mine'
         },
         {
-            title: 'Love Alarm 2.0',
-            description: 'hey, how are you buddy ? Hope u r well',
+            title: 'Love Alarm 2.o',
+            description: 'A new way to tell someone, you like them.',
             image: 'https://www.lovealarm.in/_next/image?url=%2Fandroid-chrome-512x512.png&w=96&q=75',
             link: 'https://www.lovealarm.in/'
         }
