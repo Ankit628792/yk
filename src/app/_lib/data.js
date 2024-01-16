@@ -14,7 +14,7 @@ export const data = {
         title: 'Got a Project?',
         description: `Let's talk shop`,
         email: 'ymaurya.workshop@gmail.com',
-        instagramURL: ''
+        instagramURL: 'https://www.instagram.com/logodesigner.gfx/'
     },
 
     work: [
@@ -23,6 +23,12 @@ export const data = {
             description: 'hey, how are you buddy ? Hope u r well',
             image: 'https://play-lh.googleusercontent.com/QI5MQBa5rpIKgfafArmUUxsDznjUtmEB6obrsaNLdxO3B5SATCUZbTydJ22dFfnZziwU=w240-h480-rw',
             link: 'https://play.google.com/store/apps/details?id=com.delanki.mine'
+        },
+        {
+            title: 'Love Alarm 2.0',
+            description: 'hey, how are you buddy ? Hope u r well',
+            image: 'https://www.lovealarm.in/_next/image?url=%2Fandroid-chrome-512x512.png&w=96&q=75',
+            link: 'https://www.lovealarm.in/'
         }
     ]
 }
