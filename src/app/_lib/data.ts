@@ -41,6 +41,7 @@ export const data = {
             description: 'Developer team, brand builders for better tommorrow.',
             image: '/images/4,.png',
             link: 'https://delanki.com/'
+        }
     ]
 }
 
