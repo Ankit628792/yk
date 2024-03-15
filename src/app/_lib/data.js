@@ -29,7 +29,18 @@ export const data = {
             description: 'A new way to tell someone, you like them.',
             image: 'https://play-lh.googleusercontent.com/pjB5Omm5cZG_qy69giFcnnM4neWZp1cmQk5lp5l89L3X9mIj5bscNXb5rGFOWe1Pv9VO=w240-h480',
             link: 'https://www.lovealarm.in/'
-        }
+        },
+        {
+            title: 'indimation studio',
+            description: 'Ind animation studio.',
+            image: '/images/2.png',
+            link: ''
+        },
+        {
+            title: 'Delanki',
+            description: 'Developer team, brand builders for better tommorrow.',
+            image: '/images/4,.png',
+            link: 'https://delanki.com/'
     ]
 }
 
