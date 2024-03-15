@@ -31,15 +31,15 @@ export const data = {
             link: 'https://www.lovealarm.in/'
         },
         {
-            title: 'indimation studio',
-            description: 'Ind animation studio.',
-            image: '/images/2.png',
+            title: 'indimation st.',
+            description: 'Ind animation studio, new way of creation.',
+            image: '/images/1.png',
             link: ''
         },
         {
             title: 'Delanki',
             description: 'Developer team, brand builders for better tommorrow.',
-            image: '/images/4,.png',
+            image: '/images/yo 3.png',
             link: 'https://delanki.com/'
         }
     ]
