@@ -46,7 +46,9 @@ export const data = {
 }
 
 
-export const openLink = (link) => {
+// https://vercel.com/final/yashkumar/deployments
+
+export const openLink = (link:any) => {
     if (!link) return;
     if (!link?.substring(0, 4)?.includes('http')) {
         link = 'https://' + link
